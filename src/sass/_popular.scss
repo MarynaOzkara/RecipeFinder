@@ -1,0 +1,132 @@
+
+/* ----MAIN STYLES POPULAR RECEPIES */
+.populars {
+    width: 335px;
+    margin-bottom: 40px;
+}
+.popular-recepies-title {
+    color: var(--primary-title-color);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.33;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.popular-recepies-item {
+    cursor: pointer;
+    list-style: none;
+}
+.popular-recepies-item:nth-child(3) {
+    display: none;
+}
+.popular-recepies-item:nth-child(4) {
+    display: none;
+}
+.popular-recepies-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+.thomb-popular-wrap {
+    display: flex;
+    gap: 16px;
+}
+
+.thomb-popular-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.thomb-popular-info {
+    width: 252px;
+}
+.thomb-popular-title {
+    color: var(--primary-title-color);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.28;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.popular-recepie-descr {
+    color: var(--primary-text-color);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.33;
+}
+/* ------------MOBILE w375---------------- */
+
+/* ------------TALET w768---------------- */
+@media screen and (min-width: 768px) {
+    .populars {
+        width: 176px;
+        margin-bottom: 0;
+    }
+    .popular-recepies-title {
+        margin-top: 64px;
+        margin-bottom: 32px;
+    }
+    .popular-recepies-item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .popular-recepies-item:nth-child(3) {
+        display: block;
+    }
+    .popular-recepies-item:nth-child(4) {
+        display: block;
+    }
+    .thomb-popular-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .thomb-popular-info {
+        width: 120px;
+    }
+    .popular-recepie-descr {
+        color: var(--primary-text-color);
+        font-family: Inter;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.4; 
+    }
+    .points-desc{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
+/* ------------DESCTOP w1280---------------- */
+@media screen and (min-width: 1280px) {
+    .populars {
+        width: 235px;
+    }
+    .popular-recepies-title {
+        font-size: 24px;
+        line-height: 1.16;
+    }
+    .popular-recepies-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .thomb-popular-info {
+        width: 155px;
+    }
+    .thomb-popular-img {
+        width: 64px;
+        height: 64px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
