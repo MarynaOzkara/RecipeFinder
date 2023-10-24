@@ -9,7 +9,7 @@ getRecipes()
 
     popularRecepies.addEventListener('click', onRecipeClick);
 
-    console.log(data);
+    // console.log(data);
   })
   .catch(err => {
     console.log(err);

@@ -20,7 +20,7 @@ export async function getRecipes() {
 export async function getRecipeById(id) {
   try {
     const response = await axios.get(`${BASE_URL}/recipes/${id}`);
-    console.log(response);
+    // console.log(response);
     return response.data;
   } catch (error) {
     Notiflix.Notify.failure(

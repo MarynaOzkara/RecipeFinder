@@ -96,6 +96,7 @@ body.no-scroll {
     height: 295px; 
 }
 .recepi-tags-list {
+    
     display: flex;
     flex-wrap: wrap;
     gap: 4px; 
@@ -117,11 +118,13 @@ body.no-scroll {
 }
 .recepi-rating{
     display: flex;
+    align-items: center;
     margin-bottom: 33px;
 }
 
 .js-rating-items{
     display: flex;
+    align-items: center;
     margin-right: 6px;  
 }
 .star-item{
@@ -245,6 +248,7 @@ body.no-scroll {
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
+        justify-content: space-between;
     }
     .recepi-rating{
         order: 2;
@@ -255,9 +259,12 @@ body.no-scroll {
     .recepi-rating{
         margin-bottom: 0;
     }
+    .recepi-tags-list{
+        max-width: 258px;
+    }
     .recepi-tags-wrap{
         order: 1;
-        width: 258px;
+        max-width: 258px;
     }
     .recepi-ingredients-list{
         order: 3;
