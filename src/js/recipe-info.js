@@ -27,8 +27,8 @@ export function handleRecipeInfo(recipeId) {
       if (recipe.tags.length > 1) {
         tagsList.innerHTML = createTagsMarkup(recipe.tags);
       }
-
-      handleStars();
+      const ratingList = document.querySelector('.js-rating-items');
+      ratingList.innerHTML = handleStars();
       const ratedValue = Math.round(recipe.rating);
       const stars = document.querySelectorAll('.star-item');
       // console.log(stars);
